@@ -7,12 +7,222 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="138dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="468dp"
+        android:text="Mulai Hitung"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="192dp"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="376dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nama Bahan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="239dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="516dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="316dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nama Bahan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="124dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="88dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Markup Harga"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="85dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:hint="Harga"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="104dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="140dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="125dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="96dp"
+        android:text="Tambahkan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="77dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="156dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="142dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Margin Keuntungan"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="316dp"
+        android:ems="10"
+        android:hint="Harga"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="244dp"
+        android:text="Input Harga  saat beli"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="COSTCOUNT"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="116dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="92dp"
+        android:text="Input Bahan :"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Harga Beli"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="101dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="120dp"
+        android:ems="10"
+        android:hint="1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nama Bahan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="111dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
