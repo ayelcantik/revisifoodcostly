@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         histori.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toHistori = new Intent(MainActivity.this, HistoriActivity.class);
-                startActivity(toHistori);
+//                Intent toHistori = new Intent(MainActivity.this, HistoriActivity.class);
+//                startActivity(toHistori);
             }
         });
 
@@ -57,16 +57,16 @@ public class MainActivity extends AppCompatActivity {
          profile.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent toProfile = new Intent(MainActivity.this, ProfileActivity.class);
-                 startActivity(toProfile);
+//                 Intent toProfile = new Intent(MainActivity.this, ProfileActivity.class);
+//                 startActivity(toProfile);
              }
          });
 
          avatarProfile.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent toProfile = new Intent(MainActivity.this, ProfileActivity.class);
-                 startActivity(toProfile);
+//                 Intent toProfile = new Intent(MainActivity.this, ProfileActivity.class);
+//                 startActivity(toProfile);
              }
          });
     }
