@@ -1,6 +1,8 @@
 package com.example.revisi;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -28,30 +30,44 @@ public class MainActivity extends AppCompatActivity {
         TextView histori = findViewById(R.id.histori);
         TextView avatarProfile = findViewById(R.id.avatarProfile);
 
-        addCount.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, ??);
-//            startActivity(intent);
+        addCount.setOnClickListener(new View.OnClickListener() {
+        @Override
+            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, ??);
+//                startActivity(intent);
+            }
         });
 
-        resepku.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, ??);
-//            startActivity(intent);
+        histori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toHistori = new Intent(MainActivity.this, HistoriActivity.class);
+                startActivity(toHistori);
+            }
         });
 
+         resepku.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent toResep = new Intent(MainActivity.this, ListResepActivity.class);
+                 startActivity(toResep);
+             }
+         });
 
-        profile.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, ??);
-//            startActivity(intent);
-        });
+         profile.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent toProfile = new Intent(MainActivity.this, ProfileActivity.class);
+                 startActivity(toProfile);
+             }
+         });
 
-        avatarProfile.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, ??);
-//            startActivity(intent);
-        });
-
-        histori.setOnClickListener(v -> {
-//            Intent intent = new Intent(MainActivity.this, ??);
-//            startActivity(intent);
-        });
+         avatarProfile.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent toProfile = new Intent(MainActivity.this, ProfileActivity.class);
+                 startActivity(toProfile);
+             }
+         });
     }
 }
