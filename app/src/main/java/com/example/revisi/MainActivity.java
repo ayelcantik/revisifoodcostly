@@ -33,27 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Inisialisasi Komponen
-        NamaBahan = findViewById(R.id.editTextText);
-        HargaBeli = findViewById(R.id.editTextText2);
-        spinnerItem = findViewById(R.id.spinner);
-        btnTambah = findViewById(R.id.button3);
-        btnHitung = findViewById(R.id.button2);
 
-        // Event Klik Tambahkan
-        btnTambah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String namaBahan = NamaBahan.getText().toString();
-                String hargaBeli = HargaBeli.getText().toString();
-
-                if (namaBahan.isEmpty() || hargaBeli.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Harap isi semua data!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Bahan Ditambahkan: " + namaBahan, Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
         // Event Klik Mulai Hitung
         btnHitung.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         addCount.setOnClickListener(new View.OnClickListener() {
         @Override
             public void onClick(View v) {
+            Intent toCount = new Intent(MainActivity.this, MainActivity2.class);
+            startActivity(toCount);
 //                Intent intent = new Intent(MainActivity.this, ??);
 //                startActivity(intent);
             }
@@ -91,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                  startActivity(toResep);
              }
          });
+
 
          profile.setOnClickListener(new View.OnClickListener() {
              @Override
